@@ -1,0 +1,76 @@
+name: WLClans
+author: WildanDev
+version: 1.0.0
+api: [5.0.0]
+main: WildanDev\WLClans
+
+commands:
+  clan:
+    description: Manage clans
+    usage: /clan <subcommand>
+    permission: clans.use
+    aliases: [c]
+    subcommands:
+      create:
+        description: Create a new clan
+        usage: /clan create <clanName>
+        permission: clans.create
+      listmember:
+        description: See the member of the clan
+        permission: clans.listmember
+      join:
+        description: Join a clan
+        usage: /clan join <clanName>
+        permission: clans.join
+      kick:
+        description: Kick a member from the clan
+        usage: /clan kick <playerName>
+        permission: clans.kick
+      disband:
+        description: Disband the clan
+        usage: /clan disband
+        permission: clans.disband
+      list:
+        description: List all clans
+        usage: /clan list
+        permission: clans.list
+      info:
+        description: Get information about your clan
+        usage: /clan info
+        permission: clans.info
+      leave:
+        description: Leave your current clan
+        usage: /clan leave
+        permission: clans.leave
+
+permissions:
+  clans.*:
+    description: Allows access to all clan commands
+    default: true
+  clans.use:
+    description: Allows access to the main /clan command
+    default: true
+  clans.create:
+    description: Allows creating a new clan
+    default: true
+  clans.listmember:
+    description: Allows
+    default: true
+  clans.join:
+    description: Allows joining a clan
+    default: true
+  clans.kick:
+    description: Allows kicking members from the clan
+    default: true
+  clans.disband:
+    description: Allows disbanding the clan
+    default: true
+  clans.list:
+    description: Allows listing all clans
+    default: true
+  clans.info:
+    description: Allows getting clan information
+    default: true
+  clans.leave:
+    description: Allows leaving the clan
+    default: true
